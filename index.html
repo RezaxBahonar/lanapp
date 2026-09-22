@@ -7054,7 +7054,7 @@ function renderReader(){
   var pageBefore=V242_reader.page;
   v242RenderReaderPage(false);
   if(pageBefore!==V242_reader.page)pageBefore=V242_reader.page;
-  var wtSel=$('#wordTransModeSel');if(wtSel)wtSel.value=D.settings.wordTransMode||'quick';
+  var wtSel=$('#wordTransModeSel');if(wtSel)wtSel.value=D.settings.wordTransMode||'detailed';
   var rest=ws.entries.filter(function(e){return !e.fa}).length;
   var nEdit=ws.entries.filter(function(e){return e.faEdit||e.enEdit}).length;
   var nNotes=ws.entries.filter(function(e){return e.note}).length;
