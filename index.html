@@ -1720,7 +1720,7 @@ var ZS_CFG_DEFAULTS={owner:'',repo:'',branch:'',path:'zabansaz/data.json',token:
   autoStart:true,autoChange:true,changeDebounce:60,autoInterval:true,intervalMin:10,remoteBackup:true,syncDict:true};
 function dataKey(){return 'zs_data_'+USERNAME}
 function normalizeD(){
-  if(!D)D={workspaces:{},active:null,known:{},folders:{},settings:{perSession:20,dir:'en2fa',showFa:true,wsScope:'cur',quickKnown:false,folderFilter:'all',wordTransMode:'quick',hotkeys:{},leitnerCourses:null},stats:{reviews:0,correct:0,wrong:0,days:[],daily:{}},logs:[]};
+  if(!D)D={workspaces:{},active:null,known:{},folders:{},settings:{perSession:20,dir:'en2fa',showFa:true,wsScope:'cur',quickKnown:false,folderFilter:'all',wordTransMode:'detailed',hotkeys:{},leitnerCourses:null},stats:{reviews:0,correct:0,wrong:0,days:[],daily:{}},logs:[]};
   if(!D.settings)D.settings={perSession:20,dir:'en2fa',showFa:true,wsScope:'cur',quickKnown:false,folderFilter:'all',wordTransMode:'quick',hotkeys:{}};
   if(!D.settings.hotkeys)D.settings.hotkeys={};
   if(D.settings.hotkeys.readerPrev===undefined)D.settings.hotkeys.readerPrev='ArrowUp';
